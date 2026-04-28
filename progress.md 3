@@ -1,0 +1,94 @@
+# AI-Powered Cyber Defense System
+
+## 1. Problem Statement
+Cyber attacks such as unauthorized access, fraud transactions, and phishing attempts are increasing rapidly. Traditional systems lack real-time detection and user-involved verification.
+
+---
+
+## 2. Proposed Solution
+We developed an AI-based cybersecurity system that:
+- Detects suspicious activity using machine learning
+- Assigns a risk score
+- Verifies the user using OTP authentication
+- Automatically responds to threats
+- Provides a recovery system for real users
+
+---
+
+## 3. System Architecture
+
+### Flow:
+1. Data Input (User activity / transaction)
+2. AI Detection Model (Anomaly detection)
+3. Risk Scoring Engine
+4. User Verification (OTP)
+5. Automated Response System
+6. Recovery Interface
+
+---
+
+## 4. Key Features
+
+### 🔍 Threat Detection
+- Uses ML model to identify anomalies
+- Detects “Attack Detected” events
+
+### 📊 Risk Scoring
+- Classifies threats as Low / Medium / High
+
+### 🔐 OTP Verification
+- Sends OTP to registered user
+- Prevents unauthorized access
+
+### ⚡ Automated Response
+- Blocks suspicious activity
+- Logs threat data
+- Alerts system
+
+### 👤 User Recovery System
+- Simulates real user receiving alert
+- User verifies identity via OTP
+- Secures account
+
+---
+
+## 5. Technology Stack
+
+Frontend:
+- React.js
+
+Backend:
+- Python (Flask)
+
+Machine Learning:
+- Scikit-learn
+
+---
+
+## 6. Working Demo Flow
+
+1. User performs action
+2. System detects anomaly
+3. User redirected to verification page
+4. OTP sent for validation
+5. User confirms or denies action
+6. If denied → system blocks activity
+7. Recovery page allows real user to secure account
+
+---
+
+## 7. Innovation
+
+- Human-in-the-loop security system
+- Real-time AI threat detection
+- Dual-layer verification (system + user)
+- Recovery interface simulation
+
+---
+
+## 8. Conclusion
+
+This system provides a complete cybersecurity pipeline:
+Detection → Verification → Response → Recovery
+
+It enhances digital security by combining AI intelligence with user interaction.
