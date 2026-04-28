@@ -1,0 +1,36 @@
+from flask import Flask
+from flask_cors import CORS
+from flask_mail import Mail
+from routes.detect import detect_bp
+from routes.response import response_bp
+from routes.stats import stats_bp
+from routes.otp import otp_bp # pyright: ignore[reportMissingImports]
+app = Flask(__name__)
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = 'tharunyadavts@gmail.com'
+app.config['MAIL_PASSWORD'] = 'znos felu exrb zarv'
+
+mail = Mail(app)
+CORS(app) # ✅ Required to allow frontend to fetch data
+app.register_blueprint(detect_bp, url_prefix="/api")
+app.register_blueprint(response_bp, url_prefix="/api")
+app.register_blueprint(stats_bp, url_prefix="/api")
+app.register_blueprint(otp_bp, url_prefix="/api")
+
+@app.route("/")
+def home():
+    return """
+    <h1>AI Intrusion Detection Backend Running 🚀</h1>
+    <p>Available APIs:</p>
+    <ul>
+        <li>/api/detect</li>
+        <li>/api/respond</li>
+    </ul>
+    """
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+    
