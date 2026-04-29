@@ -1,0 +1,10 @@
+We developed an AI-powered cyber defense system for detecting and preventing attacks.
+The system uses a machine learning model to identify suspicious activity in real time.
+A dynamic dashboard displays live traffic, alerts, and threat status.
+An alerts module is connected to backend APIs and updates continuously.
+Risk scoring classifies threats into different severity levels.
+When an attack is detected, the system triggers a verification process.
+Users are asked to verify identity through OTP and CAPTCHA (simulated).
+The system can block or allow actions based on verification results.
+A recovery interface allows legitimate users to secure their accounts.
+Overall, we implemented a complete pipeline: Detection → Verification → Response → Recovery.
