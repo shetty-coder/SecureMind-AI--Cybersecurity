@@ -1,0 +1,10 @@
+We analyzed the increasing risk of cyber attacks such as unauthorized access and fraud.
+We proposed an AI-based system to detect suspicious activities in real time.
+The system uses a machine learning model for anomaly detection.
+A risk scoring mechanism classifies threats based on severity.
+A dashboard interface is designed to monitor live traffic and alerts.
+We included a user verification step using OTP (simulated).
+An automated response system is planned to block suspicious actions.
+A recovery mechanism is designed for legitimate users.
+The system architecture follows Detection → Verification → Response → Recovery.
+Overall, the design focuses on combining AI detection with user involvement.
